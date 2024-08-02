@@ -176,7 +176,7 @@ library
               , Version_cogent
 
   build-depends:
-                ansi-wl-pprint >= 0.6
+                ansi-wl-pprint >= 0.6 && < 1.0
               , base >= 4.10 && < 4.17
               , binary
               , bytestring >= 0.10
@@ -214,7 +214,7 @@ library
     exposed-modules:
                      Cogent.TypeCheck.SMT
                    , Cogent.TypeCheck.Solver.SMT
-    build-depends: sbv >= 8.0
+    build-depends: sbv >= 8.0 && < 10.0
   if flag(builtin-arrays)
     cpp-options: -DBUILTIN_ARRAYS
   if flag(refinement-types)
